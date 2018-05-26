@@ -21,4 +21,10 @@ class UserCell: UITableViewCell {
         // Initialization code
     }
 
+    func setInfo(with data: User) {
+        distinctionLabel.text   = data.name.title
+        fullNameLabel.text      = data.name.first + " " + data.name.last
+        flagLabel.text          = flag(country: data.nat)
+    }
+    
 }
