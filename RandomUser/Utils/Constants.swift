@@ -12,5 +12,8 @@ struct UserList {
 }
 
 struct UserDetails {
-    
+    static let picCell  = "pictureCell"
+    static let infoCell = "infoCell"
 }
+
+

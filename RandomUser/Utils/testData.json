@@ -1,0 +1,381 @@
+
+{
+    "results": [
+                {
+                "gender": "female",
+                "name": {
+                "title": "miss",
+                "first": "louane",
+                "last": "vidal"
+                },
+                "location": {
+                "street": "5307 place de l'église",
+                "city": "courbevoie",
+                "state": "bouches-du-rhône",
+                "postcode": 95660
+                },
+                "email": "louane.vidal@example.com",
+                "login": {
+                "username": "silverbear716",
+                "password": "mybaby",
+                "salt": "VB5ywSDU",
+                "md5": "8192a266aeebd343adc5051573ca9d8f",
+                "sha1": "b7589333acbac160f52ec9a1fbcbe04e3599072d",
+                "sha256": "ab5b7e6e452fbd5cddea491a16a020aa7e36578c431cc8c7c6e6ea8962161acc"
+                },
+                "dob": "1994-12-31 14:12:33",
+                "registered": "2008-01-12 13:34:34",
+                "phone": "05-36-23-51-89",
+                "cell": "06-80-78-08-31",
+                "id": {
+                "name": "INSEE",
+                "value": "2941110177623 61"
+                },
+                "picture": {
+                "large": "https://randomuser.me/api/portraits/women/79.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/79.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/79.jpg"
+                },
+                "nat": "FR"
+                },
+                {
+                "gender": "female",
+                "name": {
+                "title": "ms",
+                "first": "indra",
+                "last": "grimberg"
+                },
+                "location": {
+                "street": "9955 kleine singel",
+                "city": "rheden",
+                "state": "utrecht",
+                "postcode": 71670
+                },
+                "email": "indra.grimberg@example.com",
+                "login": {
+                "username": "beautifulbear275",
+                "password": "dddd",
+                "salt": "xXDlG0rR",
+                "md5": "8ae66db0e80becd187799e0e3c3b3d3b",
+                "sha1": "3d90e53e4ebe330906b908089a1db751239c542e",
+                "sha256": "89493aa120df660b7dcb71596930ca8136cd4af9cb2bb98f5d26fe1bf1182e45"
+                },
+                "dob": "1947-10-29 16:36:28",
+                "registered": "2003-08-01 01:16:44",
+                "phone": "(354)-415-2419",
+                "cell": "(564)-429-5081",
+                "id": {
+                "name": "BSN",
+                "value": "22754468"
+                },
+                "picture": {
+                "large": "https://randomuser.me/api/portraits/women/84.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/84.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/84.jpg"
+                },
+                "nat": "NL"
+                },
+                {
+                "gender": "male",
+                "name": {
+                "title": "monsieur",
+                "first": "angelo",
+                "last": "louis"
+                },
+                "location": {
+                "street": "8766 boulevard de balmont",
+                "city": "montpreveyres",
+                "state": "solothurn",
+                "postcode": 8882
+                },
+                "email": "angelo.louis@example.com",
+                "login": {
+                "username": "goldenbear702",
+                "password": "testerer",
+                "salt": "A8UP9HSZ",
+                "md5": "baafbead2131067c7e054edfc78335f4",
+                "sha1": "d7318be5c303055affe15bb13a8f7c8cbb9cd859",
+                "sha256": "6436fb0932a440b88c35624dec6962f1be153380d8800c2d35433155192e668c"
+                },
+                "dob": "1972-02-05 06:46:38",
+                "registered": "2011-08-16 00:49:52",
+                "phone": "(883)-474-9314",
+                "cell": "(751)-863-1077",
+                "id": {
+                "name": "AVS",
+                "value": "756.RNFM.CDVK.68"
+                },
+                "picture": {
+                "large": "https://randomuser.me/api/portraits/men/13.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/13.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/13.jpg"
+                },
+                "nat": "CH"
+                },
+                {
+                "gender": "female",
+                "name": {
+                "title": "miss",
+                "first": "judy",
+                "last": "jensen"
+                },
+                "location": {
+                "street": "5408 manchester road",
+                "city": "lisburn",
+                "state": "northumberland",
+                "postcode": "GB91 6UZ"
+                },
+                "email": "judy.jensen@example.com",
+                "login": {
+                "username": "smallwolf389",
+                "password": "ficken",
+                "salt": "Y6gzSTo7",
+                "md5": "c2f44ed57921d507ea26f28a8f8bb528",
+                "sha1": "3e42542a4f6cc5cebad45dcbd56f74038f7e587b",
+                "sha256": "c9fa100b5ccb34368d554b3741a4c4010189c3925ac4f2dbb09091a09ff0dfe8"
+                },
+                "dob": "1965-02-24 02:04:36",
+                "registered": "2002-12-06 11:19:54",
+                "phone": "015394 94561",
+                "cell": "0724-737-954",
+                "id": {
+                "name": "NINO",
+                "value": "BN 92 27 98 N"
+                },
+                "picture": {
+                "large": "https://randomuser.me/api/portraits/women/5.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/5.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/5.jpg"
+                },
+                "nat": "GB"
+                },
+                {
+                "gender": "male",
+                "name": {
+                "title": "monsieur",
+                "first": "pablo",
+                "last": "rolland"
+                },
+                "location": {
+                "street": "5397 rue de l'abbé-migne",
+                "city": "peney-le-jorat",
+                "state": "basel-landschaft",
+                "postcode": 6613
+                },
+                "email": "pablo.rolland@example.com",
+                "login": {
+                "username": "organicpanda955",
+                "password": "2000",
+                "salt": "nvLQnYXg",
+                "md5": "3691563678d05ac04a954862a67f9343",
+                "sha1": "70999185752faa83875c0bcadc1405093c40b9a7",
+                "sha256": "b400b4dfd89e4e0ede95cf574bfb037b2fe3733ae2b231c6e093aeea6d0011e2"
+                },
+                "dob": "1956-05-27 07:03:34",
+                "registered": "2014-11-18 16:33:18",
+                "phone": "(771)-078-2788",
+                "cell": "(447)-307-1616",
+                "id": {
+                "name": "AVS",
+                "value": "756.JLZA.DPKL.67"
+                },
+                "picture": {
+                "large": "https://randomuser.me/api/portraits/men/43.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/43.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/43.jpg"
+                },
+                "nat": "CH"
+                },
+                {
+                "gender": "male",
+                "name": {
+                "title": "mr",
+                "first": "sofiane",
+                "last": "dolleman"
+                },
+                "location": {
+                "street": "3662 graadt van roggenweg",
+                "city": "wijdemeren",
+                "state": "zuid-holland",
+                "postcode": 96969
+                },
+                "email": "sofiane.dolleman@example.com",
+                "login": {
+                "username": "ticklishkoala497",
+                "password": "123456",
+                "salt": "wi3kYk3J",
+                "md5": "508d7ebe3626f7267f1bb4284432f9ff",
+                "sha1": "069c0e1ff2523a635a0ac18cb29cac24917811be",
+                "sha256": "1991431d4d4afba825049728fe52fdc59c0d459b77058f7bb46b901bdf421fc9"
+                },
+                "dob": "1989-07-31 02:34:48",
+                "registered": "2012-11-07 20:00:55",
+                "phone": "(543)-153-5070",
+                "cell": "(242)-133-0671",
+                "id": {
+                "name": "BSN",
+                "value": "48822983"
+                },
+                "picture": {
+                "large": "https://randomuser.me/api/portraits/men/74.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/74.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/74.jpg"
+                },
+                "nat": "NL"
+                },
+                {
+                "gender": "female",
+                "name": {
+                "title": "miss",
+                "first": "glória",
+                "last": "cardoso"
+                },
+                "location": {
+                "street": "7216 rua primeiro de maio ",
+                "city": "varginha",
+                "state": "rondônia",
+                "postcode": 34268
+                },
+                "email": "glória.cardoso@example.com",
+                "login": {
+                "username": "yellowdog566",
+                "password": "sloppy",
+                "salt": "jS9zU0xO",
+                "md5": "9b646b7d128892a7bd538887f68fa3ba",
+                "sha1": "f72ea6e2bb36fd5c3a5625f74fc3fd15fbbc2e3a",
+                "sha256": "8102c61c252e8fb65e3bec10af2066abab60ed958eabb0ac6ca410a6aebe43b8"
+                },
+                "dob": "1980-10-02 00:15:42",
+                "registered": "2008-09-07 23:04:40",
+                "phone": "(88) 5946-9847",
+                "cell": "(69) 2090-8882",
+                "id": {
+                "name": "",
+                "value": null
+                },
+                "picture": {
+                "large": "https://randomuser.me/api/portraits/women/10.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/10.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/10.jpg"
+                },
+                "nat": "BR"
+                },
+                {
+                "gender": "male",
+                "name": {
+                "title": "monsieur",
+                "first": "milan",
+                "last": "gonzalez"
+                },
+                "location": {
+                "street": "7741 place du 8 février 1962",
+                "city": "sottens",
+                "state": "schwyz",
+                "postcode": 4118
+                },
+                "email": "milan.gonzalez@example.com",
+                "login": {
+                "username": "orangefrog767",
+                "password": "data",
+                "salt": "7qpgaIvX",
+                "md5": "91ae792d0452b3bb9eb84667b67ed33e",
+                "sha1": "160de41f885e079d689ec3149e1afa88b5015429",
+                "sha256": "0522fa322d321f56c42e2edf5a7c65e14c978a64e6e7bef9eb0b9edbf4f2a434"
+                },
+                "dob": "1949-02-05 19:10:55",
+                "registered": "2015-06-27 03:30:59",
+                "phone": "(203)-365-5410",
+                "cell": "(002)-731-3986",
+                "id": {
+                "name": "AVS",
+                "value": "756.VFPT.ZSDT.97"
+                },
+                "picture": {
+                "large": "https://randomuser.me/api/portraits/men/56.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/56.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/56.jpg"
+                },
+                "nat": "CH"
+                },
+                {
+                "gender": "female",
+                "name": {
+                "title": "mrs",
+                "first": "olivia",
+                "last": "rogers"
+                },
+                "location": {
+                "street": "1010 high street",
+                "city": "carrigaline",
+                "state": "donegal",
+                "postcode": 32326
+                },
+                "email": "olivia.rogers@example.com",
+                "login": {
+                "username": "orangelion980",
+                "password": "country",
+                "salt": "HYHZM4S8",
+                "md5": "fda24483a5a7aac64f65b4e293a7a42c",
+                "sha1": "a285af1b39e4062afe63a969cdca5a89e29cfc2f",
+                "sha256": "d929918aba7050b631978ed4834b0283c6a9d1e7602aa27090c837de575a6d66"
+                },
+                "dob": "1969-02-04 03:50:14",
+                "registered": "2003-05-30 16:29:11",
+                "phone": "041-170-8108",
+                "cell": "081-713-4891",
+                "id": {
+                "name": "PPS",
+                "value": "4594355T"
+                },
+                "picture": {
+                "large": "https://randomuser.me/api/portraits/women/37.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/37.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/37.jpg"
+                },
+                "nat": "IE"
+                },
+                {
+                "gender": "female",
+                "name": {
+                "title": "ms",
+                "first": "gabriella",
+                "last": "lucas"
+                },
+                "location": {
+                "street": "9284 dane st",
+                "city": "augusta",
+                "state": "connecticut",
+                "postcode": 18693
+                },
+                "email": "gabriella.lucas@example.com",
+                "login": {
+                "username": "bigwolf464",
+                "password": "salomon",
+                "salt": "qTGP238p",
+                "md5": "f50012599db08b05117c2e3cf507de7f",
+                "sha1": "49bcf89e16a7bde104878cc832cc9dae26297dd3",
+                "sha256": "1afdc232472df4d41a83b0db7dbd611a9f72277332fa897695a94d21c92f5898"
+                },
+                "dob": "1960-12-07 04:38:06",
+                "registered": "2011-06-23 17:51:44",
+                "phone": "(275)-674-8967",
+                "cell": "(423)-406-6914",
+                "id": {
+                "name": "SSN",
+                "value": "884-26-8922"
+                },
+                "picture": {
+                "large": "https://randomuser.me/api/portraits/women/5.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/5.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/5.jpg"
+                },
+                "nat": "US"
+                }
+                ],
+    "info": {
+        "seed": "abc",
+        "results": 10,
+        "page": 1,
+        "version": "1.1"
+    }
+}
