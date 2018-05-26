@@ -9,10 +9,16 @@
 import UIKit
 
 class UserListController: UIViewController {
+    
+    var users: List!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? UserDetailsViewController, let currentUser = sender as? User else { return }
+        destination.infoDetails = currentUser
+    }
 }
-
