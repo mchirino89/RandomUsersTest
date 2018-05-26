@@ -7,17 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71074A3120B9B9AC00A2D06E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71074A3020B9B9AC00A2D06E /* User.swift */; };
+		71074A3520B9BAC000A2D06E /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71074A3420B9BAC000A2D06E /* List.swift */; };
+		71074A3820B9BB5500A2D06E /* UserListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71074A3720B9BB5500A2D06E /* UserListTableView.swift */; };
+		71074A3B20B9BBF900A2D06E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71074A3A20B9BBF900A2D06E /* Constants.swift */; };
+		71074A3D20B9BC5D00A2D06E /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71074A3C20B9BC5D00A2D06E /* UserCell.swift */; };
 		71F498CC20B9911C00ABC7E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F498CB20B9911C00ABC7E8 /* AppDelegate.swift */; };
-		71F498CE20B9911C00ABC7E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F498CD20B9911C00ABC7E8 /* ViewController.swift */; };
+		71F498CE20B9911C00ABC7E8 /* UserListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F498CD20B9911C00ABC7E8 /* UserListController.swift */; };
 		71F498D120B9911C00ABC7E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F498CF20B9911C00ABC7E8 /* Main.storyboard */; };
 		71F498D320B9911F00ABC7E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71F498D220B9911F00ABC7E8 /* Assets.xcassets */; };
 		71F498D620B9911F00ABC7E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F498D420B9911F00ABC7E8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71074A3020B9B9AC00A2D06E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		71074A3420B9BAC000A2D06E /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		71074A3720B9BB5500A2D06E /* UserListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableView.swift; sourceTree = "<group>"; };
+		71074A3A20B9BBF900A2D06E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		71074A3C20B9BC5D00A2D06E /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		71F498C820B9911C00ABC7E8 /* RandomUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F498CB20B9911C00ABC7E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71F498CD20B9911C00ABC7E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71F498CD20B9911C00ABC7E8 /* UserListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListController.swift; sourceTree = "<group>"; };
 		71F498D020B9911C00ABC7E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71F498D220B9911F00ABC7E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71F498D520B9911F00ABC7E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +45,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71074A3220B9BA7B00A2D06E /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				71F498CD20B9911C00ABC7E8 /* UserListController.swift */,
+				71074A3720B9BB5500A2D06E /* UserListTableView.swift */,
+				71074A3C20B9BC5D00A2D06E /* UserCell.swift */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		71074A3320B9BA9500A2D06E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				71074A3420B9BAC000A2D06E /* List.swift */,
+				71074A3020B9B9AC00A2D06E /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		71074A3620B9BB1C00A2D06E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				71F498CB20B9911C00ABC7E8 /* AppDelegate.swift */,
+				71074A3220B9BA7B00A2D06E /* UserList */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		71074A3920B9BBE100A2D06E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				71074A3A20B9BBF900A2D06E /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		71F498BF20B9911C00ABC7E8 = {
 			isa = PBXGroup;
 			children = (
@@ -54,22 +100,23 @@
 		71F498CA20B9911C00ABC7E8 /* RandomUser */ = {
 			isa = PBXGroup;
 			children = (
-				71F498CB20B9911C00ABC7E8 /* AppDelegate.swift */,
-				71F498CD20B9911C00ABC7E8 /* ViewController.swift */,
-				71F498DD20B9918B00ABC7E8 /* UI */,
 				71F498D720B9911F00ABC7E8 /* Info.plist */,
+				71074A3620B9BB1C00A2D06E /* Controllers */,
+				71074A3320B9BA9500A2D06E /* Models */,
+				71F498DD20B9918B00ABC7E8 /* Views */,
+				71074A3920B9BBE100A2D06E /* Utils */,
 			);
 			path = RandomUser;
 			sourceTree = "<group>";
 		};
-		71F498DD20B9918B00ABC7E8 /* UI */ = {
+		71F498DD20B9918B00ABC7E8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				71F498D220B9911F00ABC7E8 /* Assets.xcassets */,
 				71F498CF20B9911C00ABC7E8 /* Main.storyboard */,
 				71F498D420B9911F00ABC7E8 /* LaunchScreen.storyboard */,
 			);
-			path = UI;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71F498CE20B9911C00ABC7E8 /* ViewController.swift in Sources */,
+				71074A3120B9B9AC00A2D06E /* User.swift in Sources */,
+				71074A3520B9BAC000A2D06E /* List.swift in Sources */,
+				71074A3820B9BB5500A2D06E /* UserListTableView.swift in Sources */,
+				71F498CE20B9911C00ABC7E8 /* UserListController.swift in Sources */,
 				71F498CC20B9911C00ABC7E8 /* AppDelegate.swift in Sources */,
+				71074A3B20B9BBF900A2D06E /* Constants.swift in Sources */,
+				71074A3D20B9BC5D00A2D06E /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
