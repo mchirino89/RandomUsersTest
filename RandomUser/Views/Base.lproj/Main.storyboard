@@ -35,13 +35,21 @@
                                                     <rect key="frame" x="12.5" y="0.0" width="228" height="64.5"/>
                                                     <subviews>
                                                         <view clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="UvA-YR-4kz">
-                                                            <rect key="frame" x="0.0" y="0.5" width="48" height="64"/>
+                                                            <rect key="frame" x="0.0" y="8.5" width="48" height="48"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="man" translatesAutoresizingMaskIntoConstraints="NO" id="W3r-jb-Tpy">
-                                                                    <rect key="frame" x="0.0" y="1" width="48" height="64"/>
+                                                                    <rect key="frame" x="0.0" y="1" width="48" height="48"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="W3r-jb-Tpy" secondAttribute="height" id="kbV-DH-GHq"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="24"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="igV-MC-pdl">
-                                                                    <rect key="frame" x="14.5" y="23.5" width="20" height="20"/>
+                                                                    <rect key="frame" x="14.5" y="15.5" width="20" height="20"/>
                                                                     <color key="color" red="0.066666666669999999" green="0.41960784309999999" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </activityIndicatorView>
                                                             </subviews>
@@ -57,7 +65,7 @@
                                                                 <constraint firstAttribute="width" constant="48" id="o34-7i-xpD"/>
                                                             </constraints>
                                                         </view>
-                                                        <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xwm-I6-h7u">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xwm-I6-h7u">
                                                             <rect key="frame" x="64" y="6" width="164" height="52.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxR-qG-3oX">
@@ -108,6 +116,7 @@
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="4yh-21-CiX"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="bMk-7Y-IWY"/>
+                                    <outlet property="prefetchDataSource" destination="BYZ-38-t0r" id="gZz-SV-jm9"/>
                                 </connections>
                             </tableView>
                         </subviews>
