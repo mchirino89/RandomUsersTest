@@ -14,19 +14,6 @@ class UserDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        readLocalFile(resource: "testData", type: "json")
-    }
-
-    private func readLocalFile(resource: String, type: String) {
-        do {
-            guard let file = Bundle.main.url(forResource: resource, withExtension: type) else {
-                print("File \(resource).\(type) not found")
-                return
-            }
-            let data = try Data(contentsOf: file)
-            
-        } catch {
-            print(error.localizedDescription)
-        }
+        
     }
 }

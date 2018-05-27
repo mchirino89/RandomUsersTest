@@ -16,15 +16,10 @@ class UserCell: UITableViewCell {
     @IBOutlet weak var fullNameLabel: UILabel!
     @IBOutlet weak var flagLabel: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
     func setInfo(with data: User) {
-        distinctionLabel.text   = data.name.title
-        fullNameLabel.text      = data.name.first + " " + data.name.last
-        flagLabel.text          = flag(country: data.nat)
+        distinctionLabel.text       = data.name.title
+        fullNameLabel.text          = data.name.first + " " + data.name.last
+        flagLabel.text              = flag(country: data.nat)
     }
     
 }

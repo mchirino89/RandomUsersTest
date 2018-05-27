@@ -10,11 +10,26 @@ import UIKit
 
 class UserListController: UIViewController {
     
-    var users: List!
+    @IBOutlet weak var listTableView: UITableView!
+    var users: List?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        readLocalFile(resource: "testData", type: "json")
+    }
+    
+    private func readLocalFile(resource: String, type: String) {
+        let decoder = JSONDecoder()
+        do {
+            guard let file = Bundle.main.url(forResource: resource, withExtension: type) else {
+                print("File \(resource).\(type) not found")
+                return
+            }
+            let data    = try Data(contentsOf: file)
+            users       = try decoder.decode(List.self, from: data)
+        } catch {
+            print(error.localizedDescription)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

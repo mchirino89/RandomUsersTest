@@ -8,10 +8,14 @@
 
 import Foundation
 
-struct List {
-    var collection: [User]
-    
-    enum CodingKeys: String, CodingKey {
-        case collection = "results"
-    }
+struct Pagging: Decodable {
+    var seed: String
+    var results: Int
+    var page: Int
+    var version: String
+}
+
+struct List: Decodable {
+    var results: [User]
+    var info: Pagging
 }

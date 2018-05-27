@@ -14,13 +14,6 @@ struct Id: Decodable {
     var last:       String
 }
 
-struct Address: Decodable {
-    var street:     String
-    var city:       String
-    var state:      String
-    var postcode:   Int
-}
-
 struct Credentials: Decodable {
     var username:   String
     var password:   String
@@ -28,11 +21,6 @@ struct Credentials: Decodable {
     var md5:        String
     var sha1:       String
     var sha256:     String
-}
-
-struct Identifier: Decodable {
-    var name:       String
-    var value:      String
 }
 
 struct Image: Decodable {
@@ -44,14 +32,12 @@ struct Image: Decodable {
 struct User: Decodable {
     var gender:     String
     var name:       Id
-    var location:   Address
     var email:      String
     var login:      Credentials
     var dob:        String
     var registered: String
     var phone:      String
     var cell:       String
-    var id:         Identifier
     var picture:    Image
     var nat:        String
 }
