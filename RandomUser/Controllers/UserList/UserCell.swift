@@ -18,17 +18,19 @@ class UserCell: UITableViewCell {
     var profileImageLink = ""
 
     func setInfo(with data: User) {
-        distinctionLabel.text       = data.name.title
-        fullNameLabel.text          = data.name.first + " " + data.name.last
+        distinctionLabel.text       = data.name.title.capitalized
+        fullNameLabel.text          = data.name.first.fullName(data.name.last)
         flagLabel.text              = flag(country: data.nat)
-        thumbnailImageView.image    = data.name.title == "miss" || data.name.title == "ms" ? #imageLiteral(resourceName: "woman") : #imageLiteral(resourceName: "man")
-        profileImageLink            = data.picture.thumbnail
+        thumbnailImageView.image    = data.gender.lowercased() == "male" ? #imageLiteral(resourceName: "man") : #imageLiteral(resourceName: "woman")
+        profileImageLink            = data.picture.large
         loadActivityIndicator.startAnimating()
+        isUserInteractionEnabled    = !loadActivityIndicator.isAnimating
     }
     
     func loadFinished() {
         DispatchQueue.main.async { [unowned self]  in
             self.loadActivityIndicator.stopAnimating()
+            self.isUserInteractionEnabled = true
         }
     }
     

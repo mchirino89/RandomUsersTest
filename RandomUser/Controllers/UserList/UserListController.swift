@@ -12,7 +12,6 @@ import UIKit
 class UserListController: UIViewController {
     
     @IBOutlet weak var listTableView: UITableView!
-    let cache = NSCache<NSString, UIImage>()
     let imageLoadQueue = OperationQueue()
     var imageLoadOperations = [IndexPath: ImageLoadOperation]()
     var users: List?
@@ -36,17 +35,12 @@ class UserListController: UIViewController {
         }
     }
     
-    fileprivate func getCachedProfileImage(at key: NSString) -> UIImage? {
-        guard let cachedVersion = cache.object(forKey: key) else { return nil }
-        return cachedVersion
-    }
-    
-    fileprivate func setCachedProfileImage(_ key: NSString, _ image: UIImage) {
+    private func setCachedProfileImage(_ key: NSString, _ image: UIImage) {
         cache.setObject(image, forKey: key)
     }
     
     func queueProfileImage(for cell: UserCell, at index: IndexPath) {
-        let currentURL = URL(string: users!.results[index.row].picture.thumbnail)!
+        let currentURL = URL(string: users!.results[index.row].picture.large)!
         guard let cachedImage = getCachedProfileImage(at: currentURL.absoluteString as NSString) else {
             if let imageLoadOperation = imageLoadOperations[index],
                 let image = imageLoadOperation.image {

@@ -16,6 +16,8 @@
 		71074A4120B9D74100A2D06E /* testData.json in Resources */ = {isa = PBXBuildFile; fileRef = 71074A4020B9D74100A2D06E /* testData.json */; };
 		71074A4320B9DB8D00A2D06E /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71074A4220B9DB8D00A2D06E /* Helper.swift */; };
 		71074A4520BB4F3300A2D06E /* ImageLoadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71074A4420BB4F3300A2D06E /* ImageLoadOperation.swift */; };
+		71869B7D20BB62870005532D /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71869B7C20BB62870005532D /* PictureCell.swift */; };
+		71869B7F20BB63EE0005532D /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71869B7E20BB63EE0005532D /* InfoCell.swift */; };
 		71F498CC20B9911C00ABC7E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F498CB20B9911C00ABC7E8 /* AppDelegate.swift */; };
 		71F498CE20B9911C00ABC7E8 /* UserListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F498CD20B9911C00ABC7E8 /* UserListController.swift */; };
 		71F498D120B9911C00ABC7E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F498CF20B9911C00ABC7E8 /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 		71074A4020B9D74100A2D06E /* testData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testData.json; sourceTree = "<group>"; };
 		71074A4220B9DB8D00A2D06E /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		71074A4420BB4F3300A2D06E /* ImageLoadOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoadOperation.swift; sourceTree = "<group>"; };
+		71869B7C20BB62870005532D /* PictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
+		71869B7E20BB63EE0005532D /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
 		71F498C820B9911C00ABC7E8 /* RandomUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F498CB20B9911C00ABC7E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71F498CD20B9911C00ABC7E8 /* UserListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListController.swift; sourceTree = "<group>"; };
@@ -59,7 +63,6 @@
 				71F498CD20B9911C00ABC7E8 /* UserListController.swift */,
 				71074A3720B9BB5500A2D06E /* UserListTableView.swift */,
 				71074A3C20B9BC5D00A2D06E /* UserCell.swift */,
-				71074A3E20B9CC2F00A2D06E /* UserDetailsViewController.swift */,
 			);
 			path = UserList;
 			sourceTree = "<group>";
@@ -78,6 +81,7 @@
 			children = (
 				71F498CB20B9911C00ABC7E8 /* AppDelegate.swift */,
 				71074A3220B9BA7B00A2D06E /* UserList */,
+				71869B7B20BB62580005532D /* UserDetails */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -91,6 +95,16 @@
 				71074A4020B9D74100A2D06E /* testData.json */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		71869B7B20BB62580005532D /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				71074A3E20B9CC2F00A2D06E /* UserDetailsViewController.swift */,
+				71869B7C20BB62870005532D /* PictureCell.swift */,
+				71869B7E20BB63EE0005532D /* InfoCell.swift */,
+			);
+			path = UserDetails;
 			sourceTree = "<group>";
 		};
 		71F498BF20B9911C00ABC7E8 = {
@@ -208,11 +222,13 @@
 				71074A3820B9BB5500A2D06E /* UserListTableView.swift in Sources */,
 				71F498CE20B9911C00ABC7E8 /* UserListController.swift in Sources */,
 				71F498CC20B9911C00ABC7E8 /* AppDelegate.swift in Sources */,
+				71869B7F20BB63EE0005532D /* InfoCell.swift in Sources */,
 				71074A4320B9DB8D00A2D06E /* Helper.swift in Sources */,
 				71074A3B20B9BBF900A2D06E /* Constants.swift in Sources */,
 				71074A3F20B9CC2F00A2D06E /* UserDetailsViewController.swift in Sources */,
 				71074A3D20B9BC5D00A2D06E /* UserCell.swift in Sources */,
 				71074A4520BB4F3300A2D06E /* ImageLoadOperation.swift in Sources */,
+				71869B7D20BB62870005532D /* PictureCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
