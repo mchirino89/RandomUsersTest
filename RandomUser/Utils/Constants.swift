@@ -9,6 +9,7 @@
 import UIKit
 
 struct UserList {
+    static let API                  = URL(string: "https://randomuser.me/api/?page=1&results=50&seed=abc&format=pretty&exc=id,location")!
     static let cellName             = "userCell"
     static let segue                = "userDetailsSegue"
     static let rowHeight:CGFloat    = 72

@@ -12,13 +12,15 @@ import UIKit
 class UserListController: UIViewController {
     
     @IBOutlet weak var listTableView: UITableView!
+    @IBOutlet weak var initLoadVisualEffectView: UIVisualEffectView!
     let imageLoadQueue = OperationQueue()
     var imageLoadOperations = [IndexPath: ImageLoadOperation]()
     var users: List?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        readLocalFile(resource: "testData", type: "json")
+//        readLocalFile(resource: "testData", type: "json")
+        getUsersList()
     }
     
     private func readLocalFile(resource: String, type: String) {
@@ -37,6 +39,30 @@ class UserListController: UIViewController {
     
     private func setCachedProfileImage(_ key: NSString, _ image: UIImage) {
         cache.setObject(image, forKey: key)
+    }
+    
+    private func getUsersList() {
+        let decoder = JSONDecoder()
+        URLSession.shared.dataTask(with: UserList.API, completionHandler: { [unowned self] dataRetrieved, response, error in
+            if let error = error {
+                print(error.localizedDescription)
+            } else if let data = dataRetrieved, let response = response as? HTTPURLResponse, response.statusCode == 200 {
+                do {
+                    self.users = try decoder.decode(List.self, from: data)
+                    DispatchQueue.main.async {
+                        self.listTableView.reloadData()
+                        self.listTableView.reloadRows(at: self.listTableView.indexPathsForVisibleRows!, with: .middle)
+                        UIView.animate(withDuration: 0.3, animations: {
+                            self.initLoadVisualEffectView.alpha = 0
+                        }, completion: { _ in
+                            self.view.sendSubview(toBack: self.initLoadVisualEffectView)
+                        })
+                    }
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }).resume()
     }
     
     func queueProfileImage(for cell: UserCell, at index: IndexPath) {

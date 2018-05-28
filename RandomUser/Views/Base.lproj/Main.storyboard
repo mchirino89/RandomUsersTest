@@ -119,13 +119,36 @@
                                     <outlet property="prefetchDataSource" destination="BYZ-38-t0r" id="gZz-SV-jm9"/>
                                 </connections>
                             </tableView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fof-Dw-qSz">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="L2n-dJ-2Dp">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="SPe-w3-o8v">
+                                            <rect key="frame" x="142" y="234" width="37" height="37"/>
+                                            <color key="color" red="0.31764705879999999" green="0.59999999999999998" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </activityIndicatorView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="SPe-w3-o8v" firstAttribute="centerX" secondItem="L2n-dJ-2Dp" secondAttribute="centerX" id="O4I-0m-yNI"/>
+                                        <constraint firstItem="SPe-w3-o8v" firstAttribute="centerY" secondItem="L2n-dJ-2Dp" secondAttribute="centerY" id="c1C-NZ-F6Z"/>
+                                    </constraints>
+                                </view>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.42352941179999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <blurEffect style="extraLight"/>
+                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="mFC-nJ-gZm" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Co7-jh-MG5"/>
                             <constraint firstItem="mFC-nJ-gZm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gdq-kx-ARv"/>
+                            <constraint firstItem="fof-Dw-qSz" firstAttribute="centerY" secondItem="mFC-nJ-gZm" secondAttribute="centerY" id="M4Q-FI-jJ9"/>
                             <constraint firstItem="mFC-nJ-gZm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UXF-as-ZXj"/>
                             <constraint firstItem="mFC-nJ-gZm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dqV-nn-UKg"/>
+                            <constraint firstItem="fof-Dw-qSz" firstAttribute="centerX" secondItem="mFC-nJ-gZm" secondAttribute="centerX" id="jtb-gC-hJW"/>
+                            <constraint firstItem="fof-Dw-qSz" firstAttribute="width" secondItem="mFC-nJ-gZm" secondAttribute="width" id="qk0-Vp-0kp"/>
+                            <constraint firstItem="fof-Dw-qSz" firstAttribute="height" secondItem="mFC-nJ-gZm" secondAttribute="height" id="yDc-fa-cZl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -133,6 +156,7 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="BXU-Kp-Z82"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="initLoadVisualEffectView" destination="fof-Dw-qSz" id="wvh-km-wqr"/>
                         <outlet property="listTableView" destination="mFC-nJ-gZm" id="PzK-q4-ajH"/>
                         <segue destination="5Z7-JL-fmc" kind="show" identifier="userDetailsSegue" id="5N2-Qy-gOY"/>
                     </connections>
