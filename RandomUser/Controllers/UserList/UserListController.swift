@@ -5,7 +5,6 @@
 //  Created by Mauricio Chirino on 26/5/18.
 //  Copyright © 2018 Mauricio Chirino. All rights reserved.
 //
-// https://randomuser.me/api/?page=1&results=25&seed=abc&format=pretty&exc=id,location
 
 import UIKit
 
